@@ -1,0 +1,9 @@
+# Todos los archivos con extensión .log
+*.log
+
+# Una carpeta llamada temp/
+temp/
+
+# Archivos .md y .txt de la carpeta doc/
+doc/*.md
+doc/*.txt
