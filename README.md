@@ -1,10 +1,12 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
-### Carrera de [Nombre de la Carrera]  
 
+# Universidad Técnica de Ambato  
+## Facultad de Ingeniería en Sistemas, Electrónica e Industrial  
+### Carrera de Software  
+
+**Nivel y Paralelo:** Cuarto - A  
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Espín Gisselle  
+**Fecha:** 08/04/2026  
 
 ---
 
@@ -130,7 +132,33 @@ Evidencia: Se comprobó la configuración mediante el comando git status. Al añ
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+
+**Comandos utilizados para simular Git Flow:**
+
+git checkout -b develop           # Para crear la rama base de desarrollo a partir de main.
+git checkout -b feature/ingresar-encabezado develop   # Para crear la rama de trabajo específica para el encabezado.
+git add README.md
+git commit -m "Actualización de encabezado con datos personales"
+git checkout develop
+git merge feature/ingresar-encabezado   # Para integrar la funcionalidad terminada en la rama de desarrollo.
+
+**Descripción del proceso:**
+Debido a que el entorno local no contaba con los permisos necesarios para instalar la extensión git-flow, se aplicó la metodología de forma manual mediante comandos nativos de Git. Se estableció una estructura de ramas donde develop actúa como el eje central del desarrollo. Se trabajó de forma aislada en una rama feature para completar los datos informativos del encabezado y, una vez finalizado, se realizó la fusión (merge) hacia la rama de desarrollo.
+
+**Ventajas de Git Flow:**
+
+- **Aislamiento:** Permite desarrollar nuevas funciones en ramas separadas sin ensuciar el código principal.
+- **Orden:** Establece un ciclo de vida claro para el software (desarrollo, pruebas y producción).
+- **Colaboración:** Facilita que varios desarrolladores trabajen en distintas funcionalidades al mismo tiempo sin generar conflictos constantes.
+
+
+**Evidencia:**
+
+* Creación de la rama develop y push remoto:
+  ![Creación develop](images/pregunta3.png)
+
+* Creación de la rama feature/ingresar-encabezado y commit del encabezado:
+  ![Feature ingresar-encabezado y commit](images/pr3.png)
 
 ---
 
