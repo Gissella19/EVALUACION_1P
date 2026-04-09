@@ -50,6 +50,18 @@
 2.  [cite_start]Se utilizó el comando `git clone` seguido de la URL HTTPS de mi fork para descargar el proyecto localmente[cite: 1, 2].
 3.  [cite_start]Para verificar que el repositorio local está vinculado a mi fork, ejecuté el comando `git remote -v` en la terminal, confirmando que el origen (*origin*) apunta a mi cuenta de GitHub y no a la del repositorio original[cite: 1].
 
+
+**Evidencia:**
+
+* Fork realizado en GitHub:
+  ![Evidencia Fork](images/fork.png)
+
+* Clonación del repositorio fork a local:
+  ![Evidencia Clone](images/clone.png)
+
+* Verificación de remote:
+  ![Evidencia Remote](images/remote.png)
+
 ---
 
 ## Pregunta 2 (1 punto)
@@ -75,6 +87,20 @@
 El archivo .gitignore cumple la función de especificar archivos y carpetas que Git debe omitir o no rastrear en el control de versiones. Esto es vital para no incluir archivos irrelevantes como registros de error (.log), archivos generados por el sistema o carpetas temporales que no forman parte del código fuente.
 
 Evidencia: Se comprobó la configuración mediante el comando git status. Al añadir todos los archivos con git add ., solo se cargaron prueba.md y prueba.txt, confirmando que Git ignoró exitosamente los archivos dentro de doc/, temp/ y los archivos con extensión .log.
+
+**Evidencia:**
+
+* Creación de carpetas doc y temp:
+  ![mkdir doc y temp](images/mkdir.png)
+
+* Creación del archivo .gitignore y primer commit:
+  ![gitignore y commit](images/gitignore.png)
+
+* Creación de archivos de prueba y uso de git add .:
+  ![Archivos de prueba y git add](images/touch.png)
+
+* git status mostrando solo los archivos permitidos:
+  ![git status](images/gitstatus.png)
 
 ---
 
