@@ -71,7 +71,10 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+
+El archivo .gitignore cumple la función de especificar archivos y carpetas que Git debe omitir o no rastrear en el control de versiones. Esto es vital para no incluir archivos irrelevantes como registros de error (.log), archivos generados por el sistema o carpetas temporales que no forman parte del código fuente.
+
+Evidencia: Se comprobó la configuración mediante el comando git status. Al añadir todos los archivos con git add ., solo se cargaron prueba.md y prueba.txt, confirmando que Git ignoró exitosamente los archivos dentro de doc/, temp/ y los archivos con extensión .log.
 
 ---
 
